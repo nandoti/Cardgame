@@ -1,0 +1,7 @@
+/*
+Cor de fundo do site
+*/
+
+body {
+  background-color: var(--color-pomb-and-power);
+}
