@@ -1,14 +1,18 @@
 /* 
 Organização dos cartões
 */
-
+import "./style.css";
 import CardGame from "../../components/CardGame";
 
-const BoardGame = (amoutCards) => {
+const BoardGame = (amountCards) => {
   const $htmlCardGame = CardGame();
-  const $htmlBoardGame = $htmlCardGame.repeat(amoutCards);
+  const $htmlContent = $htmlCardGame.repeat(amountCards);
 
-  return $htmlBoardGame;
-};
+  return `
+    <section class="board-game">
+      ${$htmlContent}
+    </section>
+  `;
+}
 
 export default BoardGame;
