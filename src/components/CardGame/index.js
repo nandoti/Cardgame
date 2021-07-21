@@ -1,9 +1,13 @@
+/*
+Card dos jogos
+*/
 import "./style.css";
 
-const CardGame = () => {
-  return /*html*/ `
+const CardGame = (icon = "alura-pixel", alt = "Logo") => {
+    return /*html*/ `
     <article class="card-game">
-     <img src="images/alura-pixel.png" alt="Logo"/>
+     <img src="images/${icon}.png" alt="${alt}"/>
+     
     </article>
     `;
 };
